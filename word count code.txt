@@ -1,0 +1,26 @@
+
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+-input /user/root/word_count_data.txt \
+-output user/root/rocky3 \
+-mapper mapper.py \
+-reducer reducer.py \
+-file /root/mapper.py \
+-file /root/reducer.py
+
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+-input /user/root/wordcount1.txt \
+-output user/root/wordcount1_output \
+-mapper mapper.py \
+-reducer reducer.py \
+-file /root/wordcount/mapper.py \
+-file /root/wordcount/reducer.py
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+-input /user/root/wordcount1.txt \
+-output user/root/wordcount_output1 \
+-mapper mapper.py \
+-reducer reducer.py \
+-file mapper.py \
+-file reducer.py

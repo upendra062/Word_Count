@@ -1,0 +1,43 @@
+the quick brown fox jumped over lazy dogs quick dogs jumped jumped
+
+
+mapper
+
+the,1 
+quick,1 
+brown,1 
+fox,1 
+jumped,1 
+over,1 
+lazy,1 
+dogs,1 
+quick,1 
+dogs,1 
+jumped,1 
+jumped,1
+
+shuffle sort
+
+the,1 
+quick,[1,1] 
+brown,1 
+fox,1 
+jumped,[1,1,1] 
+over,1 
+lazy,1 
+dogs,[1,1] 
+
+reduce -sum()
+
+the,1 
+quick,2 
+brown,1 
+fox,1 
+jumped,3 
+over,1 
+lazy,1 
+dogs,2 
+
+
+
+ 
